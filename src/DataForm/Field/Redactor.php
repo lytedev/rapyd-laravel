@@ -48,7 +48,7 @@ class Redactor extends Field
                 "});" .
                 "return false;" .
                 "}");
-            Rapyd::script("tinymce.init({selector: '#".$this->name."', file_browser_callback : elFinderBrowser, plugins: 'image code', convert_urls: false});");
+            Rapyd::script("tinymce.init({selector: '#".$this->name."', file_browser_callback : elFinderBrowser, plugins: 'image code link', convert_urls: false});");
             // TODO: Add an option for specifying which wysiwyg plugins you want
             break;
 
